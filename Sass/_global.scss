@@ -1,0 +1,41 @@
+
+
+
+html{
+    box-sizing: border-box;
+    font-size:100%;
+}
+
+*,*:after,*:before{
+    box-sizing: inherit;//Eviar el el pading no afecte  las propiedades height y padding:Obtendre estas dos propiedades de su padre
+}
+body{
+    margin: 0;
+     
+}
+
+h1{
+    font-family: $primaryFont;
+    font-size: 2rem; 
+    font-weight: 700;
+    color:$white;
+}
+
+a,a:visited{
+    text-decoration:none;
+}
+
+//HELPER CLASES:Clases reusables
+
+.wrapper{
+   padding:52px 80px;
+
+}
+
+
+.blueRadialGradient{
+//DEFINIMOS:tipo de gradiente,forma de gradiente,tamaño,posicion, color de inicio y color final
+background-image:radial-gradient(circle at bottom right,#8E89F7,#05055c,);
+}
+
+
