@@ -1,0 +1,27 @@
+.hero{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    position: relative;//sin uso
+    z-index: 1;//sin uso
+    padding-top:100px;
+    
+
+    &__image{
+    width:200px;
+    margin-bottom:30px;
+    }
+
+    &__text{
+        width: 80%;
+        text-align:center;
+            
+    h1{
+        font-size:1.5rem;
+        @media #{$mq-1000-up }{
+            font-size:1.5rem;
+        }
+    }
+    }
+
+}

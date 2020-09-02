@@ -1,13 +1,10 @@
 
 header{
  position: relative;
- display: flex;
- justify-content: space-between;   
- border:1px solid red; 
- height: 400px;
-    
+ 
+     
  &:after{//Añadir el elemento inmediatamente despues  del elemento padre(header) usando "&"
-        content: 'hello';//Asignar algun valor al pseudo  elemento , no puede estar vacia
+        content: 'Pseudo elemento :after';//Asignar algun valor al pseudo  elemento , no puede estar vacia
         color:white;
         position: absolute;
         top:0;
@@ -15,46 +12,60 @@ header{
         width:100%;//asginarle el tamaño del padre
         height: 100%;
         //transform: translateX(44%);
-        //transform: translatey(410px);
+        transform: translatey(910px);
+        background-color: red;
        // background-image:radial-gradient(circle at bottom right,#8E89F7,#120075,);
               
-    }
-
-    .logo{ 
-        position: relative;//Permite modificar el z index
-        z-index: 1;//Ubicar al frente
-        display: block;
-        width:56px;
-        height:46px;
-        background-image: url(/images/logo.svg);
-        background-size: cover;
-        width: 175px;
-        height: 50px;
+    
 
     }
 
     nav{
         position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: 100px;   
         z-index: 1;
+        font-family:$primaryFont;
+        
+
+        .logo{ 
+            position: relative;//Permite modificar el z index
+            z-index: 1;//Ubicar al frente
+            display: block;
+            width:80px;
+            height:35px;
+            background-image: url(/images/logo.svg);
+            background-size: contain; 
+            background-repeat: no-repeat;           
+            background-position:center ;
+
+            @media #{$mq-1000-up}{
+                width:160px;
+            }
+            
+             }
 
         a, button{
-        font-family: $secundaryFont;
-        font-size:1rem;
+        
+        font-size:0.75rem;
         font-weight:400;
         color:$white;
+        @media #{$mq-1000-up}{
+            font-size:1rem;
+        }
+
+
         }
 
         a{
+            margin-right: 15px;
+            @media #{$mq-1000-up}{
+                
+            }
             margin-right:30px;
         }
-        button{
-            background-color: #05d69b;
-            border:0;
-            border-radius:2px;
-            padding:9px 32px;
-            // box-shadow: 0px 1px 3px -2px white;
-            
-        }
+        
 
     }
 } 
