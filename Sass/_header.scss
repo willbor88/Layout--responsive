@@ -1,6 +1,7 @@
 
 header{
- position: relative;
+ position: relative;//
+ 
  
      
  &:after{//Añadir el elemento inmediatamente despues  del elemento padre(header) usando "&"
@@ -13,7 +14,7 @@ header{
         height: 100%;
         //transform: translateX(44%);
         transform: translatey(910px);
-        background-color: red;
+        background-color: palevioletred;
        // background-image:radial-gradient(circle at bottom right,#8E89F7,#120075,);
               
     

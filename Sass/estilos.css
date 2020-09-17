@@ -12,10 +12,11 @@ html {
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  background-color: black;
 }
 
 h1 {
-  font-family: "Releway", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   color: #FFFFFF;
@@ -39,9 +40,9 @@ a, a:visited {
   background-image: radial-gradient(circle at bottom right, #8E89F7, #05055c);
 }
 
-button.verde, a.button.verde {
-  background-color: #05d69b;
-  color: #ffffff;
+button, a.button {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
   border: 0;
   border-radius: 2px;
   padding: 6px 15px;
@@ -53,9 +54,14 @@ button.verde, a.button.verde {
 }
 
 @media screen and (min-width: 1000px) {
-  button.verde, a.button.verde {
+  button, a.button {
     padding: 9px 32px;
   }
+}
+
+button.verde, a.button.verde {
+  background-color: #05d69b;
+  color: #ffffff;
 }
 
 button.verde:hover, a.button.verde:hover {
@@ -73,7 +79,7 @@ button.verde:hover, a.button.verde:hover {
           justify-content: center;
   position: relative;
   z-index: 1;
-  padding-top: 100px;
+  padding: 100px 0 75px;
 }
 
 .hero__image {
@@ -82,11 +88,11 @@ button.verde:hover, a.button.verde:hover {
 }
 
 .hero__text {
-  width: 80%;
   text-align: center;
 }
 
 .hero__text h1 {
+  margin: 0 0 36px 0;
   font-size: 1.5rem;
 }
 
@@ -94,6 +100,12 @@ button.verde:hover, a.button.verde:hover {
   .hero__text h1 {
     font-size: 1.5rem;
   }
+}
+
+a.button {
+  font-size: 0.9rem;
+  font-weight: 700px;
+  padding: 15px 60px;
 }
 
 header {
@@ -110,7 +122,7 @@ header:after {
   height: 100%;
   -webkit-transform: translatey(910px);
           transform: translatey(910px);
-  background-color: red;
+  background-color: palevioletred;
 }
 
 header nav {
@@ -123,7 +135,7 @@ header nav {
           justify-content: space-between;
   height: 100px;
   z-index: 1;
-  font-family: "Releway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 header nav .logo {
@@ -159,5 +171,33 @@ header nav a, header nav button {
 header nav a {
   margin-right: 15px;
   margin-right: 30px;
+}
+
+.caracteristicas {
+  min-height: 100px;
+  background-color: #ffffff;
+}
+
+.caracteristicas__triangulo {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+}
+
+.caracteristicas:before {
+  content: "will";
+  position: absolute;
+  padding-bottom: 76%;
+  width: 41.7%;
+  background-color: #ffff;
+  z-index: -1;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-38deg) skewX(46deg) translateX(-100%);
+          transform: rotate(-38deg) skewX(46deg) translateX(-100%);
+  color: red;
 }
 /*# sourceMappingURL=estilos.css.map */
