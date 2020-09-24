@@ -12,7 +12,7 @@ html{
 body{
     margin: 0;
     font-family: $secundaryFont;
-    background-color: black;
+    
          
 }
 
@@ -28,8 +28,10 @@ a,a:visited{
 }
 
 //Media queries
-
+$mq-540-up:"screen and(min-width:540px)";
 $mq-1000-up:"screen and(min-width:1000px)";
+$mq-1200-up:"screen and(min-width:1200px)";
+
 
 //HELPER CLASES:Clases reusables
 

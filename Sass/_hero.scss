@@ -4,22 +4,50 @@
     justify-content:center;
     position: relative;//sin uso
     z-index: 1;//sin uso
-    padding:100px 0 75px;
+    padding:100px 0 120px;
     
 
     &__image{
     width:200px;
     margin-bottom:30px;
+    order:1;
+    
+    
+    @media #{$mq-1000-up}{
+    flex:2; 
+    order:2; 
+    max-width:426px;
     }
-
+ 
+    }
+ 
     &__text{
+    order: 2;
+    max-width: 500px;//Reducir el area de  texto
     text-align:center;
+    
+         
+
+    @media #{$mq-1000-up}{
+        flex:3;//Aumentar tamaño de elemento
+        order:1;
+        max-width: 750px; //Evitar saltos de texto 
+        padding-right: 10%;
+        text-align:left;
+        margin-top:-5rem;//Subir texto
+        }
+
+        @media #{$mq-1200-up}{
+            
+        }
             
     h1{
         margin:0 0 36px 0;
         font-size:1.5rem;
+
         @media #{$mq-1000-up }{
-            font-size:1.5rem;
+            font-size:2.5rem ;
+            line-height:1.4;  
         }
     }
     }
@@ -27,9 +55,14 @@
 }
 
 a.button{
-    font-size: 0.9rem;
-    font-weight: 700px;
     padding:15px 60px;
+    font-size: 0,9rem;
+    font-weight: 700px;
     
-
+     
+@media #{$mq-1000-up}{
+  padding:23px 94px; 
+  font-size: 1.5rem;    
 }
+
+  }

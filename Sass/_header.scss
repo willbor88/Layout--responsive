@@ -4,22 +4,18 @@ header{
  
  
      
- &:after{//Añadir el elemento inmediatamente despues  del elemento padre(header) usando "&"
-        content: 'Pseudo elemento :after';//Asignar algun valor al pseudo  elemento , no puede estar vacia
-        color:white;
-        position: absolute;
-        top:0;
-        z-index: 0;//Ubicar detras
-        width:100%;//asginarle el tamaño del padre
-        height: 100%;
-        //transform: translateX(44%);
-        transform: translatey(910px);
-        background-color: palevioletred;
-       // background-image:radial-gradient(circle at bottom right,#8E89F7,#120075,);
-              
-    
-
-    }
+//  &:after{//Añadir el elemento inmediatamente despues  del elemento padre(header) usando "&"
+//         content: 'Pseudo elemento :after';//Asignar algun valor al pseudo  elemento , no puede estar vacia
+//         color:white;
+//         position: absolute;
+//         top:0;
+//         z-index: 0;//Ubicar detras
+//         width:100%;//asginarle el tamaño del padre
+//         height: 100%;
+//         //transform: translateX(44%);
+//         transform: translatey(910px);
+//         background-image:radial-gradient(circle at bottom right,#8E89F7,#120075,);
+//          }
 
     nav{
         position: relative;

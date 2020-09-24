@@ -2,25 +2,34 @@
 min-height:100px;
 background-color:#ffffff;
 
+
+ 
+
     &__triangulo{
     display:block;
     position: relative;
-    width:100%;
+     width:100%;
     height: 60px;
     transform:translateY(-60px);
+     
     }
 
 
    &:before{
-       content: "will";
+       content: ""; 
        position: absolute;
-       padding-bottom:76%;
-       width: 41.7%;
-       background-color:#ffff;
-       z-index: -1;
+       padding-bottom:27%;//Establece el largo del elemento
+       width: 120%;
+       background-color:#ffffff;
+       z-index: +1;
        -webkit-transform-origin:0 0 ;
        transform-origin:0 0;
-       transform: rotate(-38deg) skewX(46deg) translateX(-100%);
-       color:red;
+       transform: rotate(7deg) translateX(-3%) translateY(-45%);
+       color:black;
+
+    //    @media #{$mq-540-up}{
+        //transform: rotate(7deg) translateX(-3%) translateY(-45%);
+    //    }
+
        }
 }
