@@ -12,6 +12,8 @@ html {
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -23,6 +25,11 @@ h1 {
 
 a, a:visited {
   text-decoration: none;
+}
+
+p {
+  font-size: 0.8rem;
+  line-height: 1.3;
 }
 
 .wrapper {
@@ -215,7 +222,7 @@ header nav a {
           transform: translateY(-60px);
 }
 
-.caracteristicas:before {
+.caracteristicas__triangulo:before {
   content: "";
   position: absolute;
   padding-bottom: 27%;
@@ -226,6 +233,41 @@ header nav a {
   transform-origin: 0 0;
   -webkit-transform: rotate(7deg) translateX(-3%) translateY(-45%);
           transform: rotate(7deg) translateX(-3%) translateY(-45%);
-  color: black;
+}
+
+.caracteristicas__Wrapper {
+  position: relative;
+}
+
+@media screen and (min-width: 1000px) {
+  .caracteristicas__Wrapper {
+    margin-top: -120px;
+  }
+}
+
+.caracteristicas__Wrapper h2 {
+  font-size: 1,8rem;
+  color: #282385;
+  font-weight: 700px;
+}
+
+.caracteristicas__contenido img {
+  width: 382px;
+}
+
+@media screen and (min-width: 1000px) {
+  .caracteristicas__contenido img {
+    width: 382;
+  }
+}
+
+.caracteristicas__item .caracteristica h3 {
+  font-size: 1.16rem;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.caracteristicas__item .caracteristica p {
+  color: #858282;
 }
 /*# sourceMappingURL=estilos.css.map */
