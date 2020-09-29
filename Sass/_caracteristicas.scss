@@ -8,7 +8,7 @@ background-color:#ffffff;
     &__triangulo{
     display:block;
     position: relative;
-     width:100%;
+    width:100%;
     height: 60px;
     transform:translateY(-60px);
 
@@ -36,49 +36,97 @@ background-color:#ffffff;
     
      
     }
+&__Wrapper{
+position: relative;//Posicionar elemento por sobre al elemento anterior quien tiene position absolute
 
-   &__Wrapper{
-       position: relative;
-       
-       @media #{$mq-1000-up}{
-        margin-top:-120px;
-       }
+@media #{$mq-1000-up}{
+ margin-top:-120px;
+}
 
-       h2{
-           font-size:1,8rem;
-           color:$azulOscuro;
-           font-weight: 700px ;
-            
-       }
+h2{
+    font-family: $primaryFont;
+    font-size:1.5rem;
+    color:$azulMuyOscuro;
+    font-weight: 700px ;
+    text-align:center;
+    margin-bottom: 100px;
+    padding:0 50px;
+    line-height: 1.5;
 
-   }
+            @media #{$mq-1000-up}{
+                margin-bottom:130;
+            }
+    }
 
-   &__contenido{
-       img{
-           width:382px;
+}
 
-           @media #{$mq-1000-up}{
-               width:382;
-           }
-
-       }
-   }
-
-   &__item{
-       .caracteristica{
-           h3{
-               font-size: 1.16rem;
-               margin-bottom: 20px;
-               margin-top: 0px;
- 
-           }
-           p{
-            color:$grisClaro;
-           }
-           
-       }
+&__contenido{
+img{
+    margin-bottom: 100px;
+    width:382px; 
+    max-height: 350px;
+        @media #{$mq-1000-up}{
+            margin-bottom: 0;
         
-   }
-   
+        }
+
+        
+    }
+
+
+@media #{$mq-1000-up}{
+        display:flex;
+        
+        
+}
+
+
+}
+
+//  &__image{
+// background-image:url(/images/illustration-features.svg);
+// background-size:contain ;
+// background-repeat:no-repeat;
+// background-position:center; 
+    
+    
+//     // @media #{$mq-1000-up}{
+//     //     flex: 1;
+//     // }
+// }
+
+&__item{
+   // max-height: 350px;
+
+    @media #{$mq-1000-up}{
+        padding:0 60px;
+    }
+    
+    &:last-child{
+        padding-right:0;//Quitar paddin del ultimo elemento 
+    }
+.caracteristica{
+    margin-bottom: 40px;    
+h3{
+font-size: 1rem;
+margin-bottom: 17px; 
+margin-top: 0px;
+
+@media #{$mq-1000-up}{
+font-size: 1rem;
+margin-bottom: 17px; 
+margin-bottom: 40px;
+
+}
+
+}
+p{
+    color:$grisClaro;
+}
+ 
+ }
+        
+}
+
 
 }

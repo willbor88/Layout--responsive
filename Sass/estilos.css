@@ -246,25 +246,68 @@ header nav a {
 }
 
 .caracteristicas__Wrapper h2 {
-  font-size: 1,8rem;
-  color: #282385;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: #030222;
   font-weight: 700px;
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 0 50px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1000px) {
+  .caracteristicas__Wrapper h2 {
+    margin-bottom: 130;
+  }
 }
 
 .caracteristicas__contenido img {
+  margin-bottom: 100px;
   width: 382px;
+  max-height: 350px;
 }
 
 @media screen and (min-width: 1000px) {
   .caracteristicas__contenido img {
-    width: 382;
+    margin-bottom: 0;
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .caracteristicas__contenido {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .caracteristicas__item {
+    padding: 0 60px;
+  }
+}
+
+.caracteristicas__item:last-child {
+  padding-right: 0;
+}
+
+.caracteristicas__item .caracteristica {
+  margin-bottom: 40px;
+}
+
 .caracteristicas__item .caracteristica h3 {
-  font-size: 1.16rem;
-  margin-bottom: 20px;
+  font-size: 1rem;
+  margin-bottom: 17px;
   margin-top: 0px;
+}
+
+@media screen and (min-width: 1000px) {
+  .caracteristicas__item .caracteristica h3 {
+    font-size: 1rem;
+    margin-bottom: 17px;
+    margin-bottom: 40px;
+  }
 }
 
 .caracteristicas__item .caracteristica p {
