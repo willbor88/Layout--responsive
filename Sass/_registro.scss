@@ -1,0 +1,56 @@
+.registro{
+    text-align: center;
+
+    h2{
+        margin-bottom:20px; 
+    
+        @media #{$mq-1000-up}{
+            margin-bottom:28px;
+        }
+    }
+    h3{
+        max-width: 700px;
+        margin-bottom:20px;
+
+        @media #{$mq-1000-up}{
+        margin:0 auto 28px;
+ 
+        }
+    }
+
+    form{
+    max-width: 630px;
+    margin:0 auto; 
+       
+
+    @media #{$mq-1000-up}{
+        display:flex;
+           
+        
+    }
+
+        input[type="email"]
+        {   padding:15px 40px;
+            outline: none;
+            border: none;
+            box-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+            color:$grisClaro;
+
+            @media #{$mq-1000-up}{
+                flex:2;
+                margin-right: 15px;
+            }
+
+        }
+        input[type="submit"]{
+
+            @media #{$mq-1000-up}{
+                margin: 15px;
+                flex:1; 
+            }
+        
+        }
+
+    }
+
+}

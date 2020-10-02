@@ -23,6 +23,37 @@ h1 {
   color: #FFFFFF;
 }
 
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: #030222;
+  font-weight: 700px;
+  text-align: center;
+  margin-bottom: 80px;
+  padding: 0 50px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1000px) {
+  h2 {
+    margin-bottom: 130;
+  }
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #474199;
+  font-weight: 700px;
+}
+
+@media screen and (min-width: 1000px) {
+  h3 {
+    font-size: 1rem;
+  }
+}
+
 a, a:visited {
   text-decoration: none;
 }
@@ -46,7 +77,7 @@ p {
   background-image: radial-gradient(circle at bottom right, #8E89F7, #05055c);
 }
 
-button, a.button {
+button, a.button, input[type="submit"] {
   display: inline-block;
   font-family: "Raleway", sans-serif;
   border: 0;
@@ -60,17 +91,17 @@ button, a.button {
 }
 
 @media screen and (min-width: 1000px) {
-  button, a.button {
+  button, a.button, input[type="submit"] {
     padding: 9px 32px;
   }
 }
 
-button.verde, a.button.verde {
+button.verde, a.button.verde, input[type="submit"].verde {
   background-color: #05d69b;
   color: #ffffff;
 }
 
-button.verde:hover, a.button.verde:hover {
+button.verde:hover, a.button.verde:hover, input[type="submit"].verde:hover {
   background-color: #05bd89;
 }
 
@@ -245,23 +276,6 @@ header nav a {
   }
 }
 
-.caracteristicas__Wrapper h2 {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.5rem;
-  color: #030222;
-  font-weight: 700px;
-  text-align: center;
-  margin-bottom: 100px;
-  padding: 0 50px;
-  line-height: 1.5;
-}
-
-@media screen and (min-width: 1000px) {
-  .caracteristicas__Wrapper h2 {
-    margin-bottom: 130;
-  }
-}
-
 .caracteristicas__contenido img {
   margin-bottom: 100px;
   width: 382px;
@@ -310,7 +324,72 @@ header nav a {
   }
 }
 
-.caracteristicas__item .caracteristica p {
+.caracteristicas__item p {
   color: #858282;
+}
+
+.registro {
+  text-align: center;
+}
+
+.registro h2 {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  .registro h2 {
+    margin-bottom: 28px;
+  }
+}
+
+.registro h3 {
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  .registro h3 {
+    margin: 0 auto 28px;
+  }
+}
+
+.registro form {
+  max-width: 630px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .registro form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.registro form input[type="email"] {
+  padding: 15px 40px;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  color: #858282;
+}
+
+@media screen and (min-width: 1000px) {
+  .registro form input[type="email"] {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .registro form input[type="submit"] {
+    margin: 15px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
