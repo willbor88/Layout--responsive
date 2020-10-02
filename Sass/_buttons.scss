@@ -12,6 +12,8 @@ button, a.button,input[type="submit"]{
         padding:9px 32px;
     }
 
+
+    //COLORES
     &.verde{
         background-color: $verde;
         color:#ffffff;
@@ -22,4 +24,13 @@ button, a.button,input[type="submit"]{
         
     }
 
+//TAMAÑOS
+
+&.medButton{
+    font-size: 1.12rem;
+    line-height: 1.5;
+}
+
+
+ 
 }

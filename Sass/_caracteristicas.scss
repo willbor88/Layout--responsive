@@ -22,7 +22,7 @@ background-color:#ffffff;
         -webkit-transform-origin:0 0 ;
         transform-origin:0 0;
         transform: rotate(7deg) translateX(-3%) translateY(-45%);
-         
+        
         }
     
      
@@ -90,6 +90,11 @@ margin-bottom: 40px;
 }
 p{
     color:$grisClaro;
+    font-size: 0.9rem; 
+     line-height: 1.5;
+    @media #{$mq-1000-up}{
+        font-size: 1rem;
+    }
 }
  
  }

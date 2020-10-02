@@ -26,31 +26,30 @@ h1 {
 h2 {
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
-  color: #030222;
+  color: #191353;
   font-weight: 700px;
   text-align: center;
-  margin-bottom: 80px;
-  padding: 0 50px;
   line-height: 1.5;
 }
 
 @media screen and (min-width: 1000px) {
   h2 {
-    margin-bottom: 130;
+    font-size: 2rem;
   }
 }
 
 h3 {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
   line-height: 1.5;
-  color: #474199;
-  font-weight: 700px;
+  color: #191353;
+  font-weight: 400px;
 }
 
 @media screen and (min-width: 1000px) {
   h3 {
     font-size: 1rem;
+    font-weight: 400px;
   }
 }
 
@@ -103,6 +102,11 @@ button.verde, a.button.verde, input[type="submit"].verde {
 
 button.verde:hover, a.button.verde:hover, input[type="submit"].verde:hover {
   background-color: #05bd89;
+}
+
+button.medButton, a.button.medButton, input[type="submit"].medButton {
+  font-size: 1.12rem;
+  line-height: 1.5;
 }
 
 .hero {
@@ -326,10 +330,33 @@ header nav a {
 
 .caracteristicas__item p {
   color: #858282;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1000px) {
+  .caracteristicas__item p {
+    font-size: 1rem;
+  }
 }
 
 .registro {
   text-align: center;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 540px) {
+  .registro {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .registro {
+    max-width: none;
+  }
 }
 
 .registro h2 {
@@ -344,35 +371,32 @@ header nav a {
 
 .registro h3 {
   max-width: 700px;
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: 1000px) {
-  .registro h3 {
-    margin: 0 auto 28px;
-  }
+  margin: 0 auto 40px;
+  color: #474199;
 }
 
 .registro form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 630px;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1000px) {
-  .registro form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 .registro form input[type="email"] {
+  margin-bottom: 14px;
   padding: 15px 40px;
   outline: none;
   border: none;
   -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
-  color: #858282;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
 }
 
 @media screen and (min-width: 1000px) {
@@ -381,7 +405,33 @@ header nav a {
         -ms-flex: 2;
             flex: 2;
     margin-right: 15px;
+    margin-bottom: 0px;
   }
+}
+
+.registro form input[type="email"]::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.registro form input[type="email"]:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.registro form input[type="email"]::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.registro form input[type="email"]::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.registro form input[type="submit"] {
+  font-weight: 700px;
+  font-size: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  padding: 11px 15px;
 }
 
 @media screen and (min-width: 1000px) {
