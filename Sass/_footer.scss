@@ -1,0 +1,184 @@
+.footer{
+background-color: $moradoOscuro;
+*{
+    color:$white;
+}
+
+    &__contenido{
+    padding-top: 150px;
+    
+    @media #{$mq-700-up}{
+        display: flex;
+        flex-wrap:wrap; 
+    }
+     
+    
+    > div {//Divs Hijos de contenido
+        @media #{$mq-1000-up}{
+            padding:0 55px;
+            border-right: 1px solid $white;
+        }
+         
+    } 
+
+  
+}
+
+    &__contacto{
+        padding-bottom: 80px;
+
+        @media #{$mq-700-up}{
+            flex:1 0 50%;
+        }
+
+        @media #{$mq-1000-up}{
+            flex:0 0 225px;//Pmier:Crecer,segundo;encojer,tercer:Pre-establecido. 
+            //flex:1;
+            order: 1; 
+            padding-left: 0 !important;
+        } 
+
+
+
+        .logo{
+            width:162px;
+            height: 55px;
+            margin-bottom: 55px; 
+
+        }
+
+        .tel,.email{
+            position: relative;
+            display:block;
+            margin-bottom:24px;
+            font-size:0.9rem; 
+            padding-left: 40px;   
+            background-repeat: no-repeat;
+             background-position: left center;
+            }
+        
+        
+        .tel{
+            margin-bottom: 24px;  
+                background-image: url('/images/icon-phone.svg');
+             } 
+             
+        
+        .email{
+                  
+                background-image: url('/images/icon-email.svg');
+                 
+            }
+
+        } 
+
+    
+
+    &__form{
+        max-width: 362px;
+        margin-bottom:85px;
+        *{
+            margin-left: 50px;
+        }
+
+        @media #{$mq-1000-up}{
+            flex:2;
+            order: 3;
+            border:none !important;
+            padding-left: 0 !important;
+            
+        } 
+
+        p{
+                font-size:1rem;
+                text-align:center;
+                margin-bottom:55px;
+                line-height: 1.5rem;
+        }
+
+        form{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-end;
+        }
+
+        input[type="email"]{
+            width:100%;
+            border-radius: 3px;
+            margin: 0 0 15 0;   
+            padding:13px 25px;
+
+        }
+        input[type="submit"]{
+            display:block;
+            font-size:1rem;
+            margin:0;
+            padding:11px 60px;
+
+            
+        }
+
+    }
+
+
+    &__links{
+
+        @media #{$mq-700-up}{
+            display:flex;
+            flex:0 1 50%;
+ 
+         }
+
+        @media #{$mq-1000-up}{
+            order: 1;
+            flex:2; 
+            display:flex;
+              
+             
+            
+        }
+
+
+         > div {//Hijos directos
+            margin-bottom:56px;
+
+            @media #{$mq-700-up}{
+                flex:1 
+            }
+            
+        @media #{$mq-1000-up}{
+           
+        }
+
+         }
+
+        &-title{
+            font-weight: 700; 
+            margin-bottom:24px;
+        }
+
+        a{
+            display:block;
+            font-size:0.8rem;
+            line-height:1.8rem;
+        }
+
+    .fylo{
+
+    }
+    .company{
+        
+    }
+
+    .support{
+        
+
+    }
+    
+
+    }
+
+    
+
+
+}

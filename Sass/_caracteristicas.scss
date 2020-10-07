@@ -5,7 +5,7 @@ background-color:#ffffff;
 
  
 
-    &__triangulo{
+    &__triangulo{//Creamos un div para luego posicionarle encima el elemento flotante(Before)
     display:block;
     position: relative;
     width:100%;
@@ -16,7 +16,7 @@ background-color:#ffffff;
         content: ""; 
         position: absolute;
         padding-bottom:27%;//Establece el largo del elemento
-        width: 120%;
+        width: 105%;
         background-color:#ffffff;
         z-index: +1;
         -webkit-transform-origin:0 0 ;
@@ -42,8 +42,9 @@ position: relative;//Posicionar elemento por sobre al elemento anterior quien ti
 
 &__contenido{
 img{
+    
     margin-bottom: 100px;
-    width:382px; 
+    width:300px; 
     max-height: 350px;
         @media #{$mq-1000-up}{
             margin-bottom: 0;

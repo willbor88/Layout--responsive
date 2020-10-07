@@ -26,22 +26,7 @@ header{
         font-family:$primaryFont;
         
 
-        .logo{ 
-            position: relative;//Permite modificar el z index
-            z-index: 1;//Ubicar al frente
-            display: block;
-            width:80px;
-            height:35px;
-            background-image: url(/images/logo.svg);
-            background-size: contain; 
-            background-repeat: no-repeat;           
-            background-position:center ;
-
-            @media #{$mq-1000-up}{
-                width:160px;
-            }
-            
-             }
+        
 
         a, button{
         

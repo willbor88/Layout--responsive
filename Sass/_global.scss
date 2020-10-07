@@ -1,20 +1,22 @@
 //Media queries
 $mq-540-up:"screen and(min-width:540px)";
+$mq-700-up:"screen and(min-width:700px)";
 $mq-1000-up:"screen and(min-width:1000px)";
 $mq-1200-up:"screen and(min-width:1200px)";
+*{
 
+}
 
 html{
+
     box-sizing: border-box;
     font-size:100%;
-    
-}
+    }
 
 *,*:after,*:before{
     box-sizing: inherit;//Eviar el el pading no afecte  las propiedades height y padding:Obtendre estas dos propiedades de su padre
 }
 body{
-    margin: 0;
     font-family: $secundaryFont;
     width: 100%;    //Ajustar el body a pantalla completa
     overflow-x: hidden;
@@ -67,6 +69,53 @@ font-size:0.8rem;
 line-height: 1.3 ;
 }
 
+form{
+
+    input[type="email"]
+        {   margin-bottom: 14px;
+            padding:15px 40px;
+            outline: none;
+            border: none;
+            font-size:1rem;
+            color:rgba(0,0,0,0.5);
+            
+           
+            
+
+            @media #{$mq-1000-up}{
+                
+                margin-right: 15px;
+                margin-bottom: 0px;
+            }
+
+            &::placeholder{
+            color:rgba(0,0,0,0.2);
+            }
+
+        }
+        input[type="submit"]{  
+            font-weight: 700px;
+            font-size: 1rem;
+            //flex:1 0 100%;//Acupar el 100%
+            padding:11px 15px;
+
+            @media #{$mq-1000-up}{
+                margin: 15px;
+               
+                
+
+            }
+             
+        }
+
+}
+
+.blueRadialGradient{
+    //DEFINIMOS:tipo de gradiente,forma de gradiente,tamaño,posicion, color de inicio y color final
+    background-image:radial-gradient(circle at bottom right,#8E89F7,#05055c,);
+    }
+    
+
 
 
 
@@ -83,10 +132,23 @@ line-height: 1.3 ;
 
 }
 
+.logo{ 
+    position: relative;//Permite modificar el z index
+    z-index: 1;//Ubicar al frente
+    display: block;
+    width:80px;
+    height:35px;
+    background-image: url(/images/logo.svg);
+    background-size: contain; 
+    background-repeat: no-repeat;           
+    background-position:center ;
 
-.blueRadialGradient{
-//DEFINIMOS:tipo de gradiente,forma de gradiente,tamaño,posicion, color de inicio y color final
-background-image:radial-gradient(circle at bottom right,#8E89F7,#05055c,);
-}
+    @media #{$mq-1000-up}{
+        width:160px;
+    }
+    
+     }
+
+
 
 
